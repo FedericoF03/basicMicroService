@@ -1,0 +1,19 @@
+
+Mi conclusion sobre mis errores:
+El codigo escrito por dentro no lo puedo considerar todavia error, una actualizacion voy a dar cuando lo solucione debido a que la logica la entendi
+Mi problema fue la instanciacion principalmente, la logica no llegue a terminarla debido a ello.
+El segundo que no afectaria mas sin embargo no respetaria un orden es el mal uso de la organizacion, viole capas de logica usando una sobre la otra
+y use mal el sentido de la carpeta impl, justamente esta se encarga de la implementacion del servicio y no la interfaz que funciona como contrato
+al mismo.
+Uno que no es pequeño pero para detallar mas es el mal uso de la annotation en general, debo revisar mejor su uso y su funcionamiento por el transfondo
+porque las mismas conllevan una logica por atras que busca como objective optimizer todo el proceso.
+
+
+
+Duda: Por que llama a las interfaces el @Autowired y no se lo impide, duda.
+Es posible que algunas anotaciones sirvan para impedir su uso de otra manera?
+Es posible sacarlo a una clase sin modificarla o sobreescribir el metodo?
+Como puede ser posible esta instansiacion mientras no le siga un componente, 
+por que cuando se crea el implements despues no se toca el codigo ese sino mas bien el de implements?
+Es el comportamiento por defecto o es por las modificaciones.
+El metodo de findByid, no deberia tirar un error por no tener la Optional? ClientServiceImpl.java Line 53 en this.clientRepository.findById(id)
